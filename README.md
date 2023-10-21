@@ -76,10 +76,10 @@ Now let's log in -
 # Wait till the login fields are available
 WebDriverWait(driver, 300).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="loginForm"]/div/div[1]/div/label/input')))
 username_input = driver.find_element(By.XPATH, '//*[@id="loginForm"]/div/div[1]/div/label/input')
-username_input.send_keys('mahfuzball')
+username_input.send_keys('*********')
 
 pass_input = driver.find_element(By.XPATH, '//*[@id="loginForm"]/div/div[2]/div/label/input')
-pass_input.send_keys('tedmosby')
+pass_input.send_keys('***********')
 
 login_btn = driver.find_element(By.XPATH, '//*[@id="loginForm"]/div/div[3]')
 login_btn.click()
